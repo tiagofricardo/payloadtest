@@ -74,7 +74,7 @@ exports.paymentRounter = (0, trpc_1.router)({
                         return [4 /*yield*/, payload.create({
                                 collection: "orders",
                                 data: {
-                                    _isPAid: false,
+                                    _isPaid: false,
                                     products: filteredProducts.map(function (prod) { return prod.id; }),
                                     user: user.id,
                                 },
@@ -148,7 +148,7 @@ exports.paymentRounter = (0, trpc_1.router)({
                             throw new server_1.TRPCError({ code: "NOT_FOUND" });
                         }
                         order = orders[0];
-                        return [2 /*return*/, { isPaid: order._isPAid }];
+                        return [2 /*return*/, { isPaid: order._isPaid }];
                 }
             });
         });

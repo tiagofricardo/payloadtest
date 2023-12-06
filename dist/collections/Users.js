@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Users = {
+exports.Users = void 0;
+exports.Users = {
     slug: "users",
     auth: {
         verify: {
@@ -30,4 +31,3 @@ var Users = {
         },
     ],
 };
-exports.default = Users;

@@ -33,7 +33,7 @@ export const paymentRounter = router({
       const order = await payload.create({
         collection: "orders",
         data: {
-          _isPAid: false,
+          _isPaid: false,
           products: filteredProducts.map((prod) => prod.id),
           user: user.id,
         },
@@ -99,6 +99,6 @@ export const paymentRounter = router({
 
       const [order] = orders;
 
-      return { isPaid: order._isPAid };
+      return { isPaid: order._isPaid };
     }),
 });

@@ -97,7 +97,7 @@ var stripeWebhookHandler = function (req, res) { return __awaiter(void 0, void 0
                 return [4 /*yield*/, payload.update({
                         collection: "orders",
                         data: {
-                            _isPAid: true,
+                            _isPaid: true,
                         },
                         where: {
                             id: {
