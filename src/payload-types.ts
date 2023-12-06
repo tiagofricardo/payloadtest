@@ -20,7 +20,9 @@ export interface Config {
 }
 export interface User {
   id: string;
-  role?: ('admin' | 'user') | null;
+  products?: (string | Product)[] | null;
+  product_files?: (string | ProductFile)[] | null;
+  role: 'admin' | 'user';
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -38,7 +40,7 @@ export interface Product {
   id: string;
   user?: (string | null) | User;
   name: string;
-  description: string;
+  description?: string | null;
   price: number;
   category: 'ui_kits' | 'icons';
   product_files: string | ProductFile;
@@ -104,7 +106,7 @@ export interface Media {
 }
 export interface Order {
   id: string;
-  _isPAid: boolean;
+  _isPaid: boolean;
   user: string | User;
   products: (string | Product)[];
   updatedAt: string;
