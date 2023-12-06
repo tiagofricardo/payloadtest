@@ -1,6 +1,6 @@
 import { CollectionConfig } from "payload/types";
 
-const Users: CollectionConfig = {
+export const Users: CollectionConfig = {
   slug: "users",
   auth: {
     verify: {
@@ -29,4 +29,4 @@ const Users: CollectionConfig = {
     },
   ],
 };
-export default Users;
+

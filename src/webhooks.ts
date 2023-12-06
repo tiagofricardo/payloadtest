@@ -72,7 +72,7 @@ export const stripeWebhookHandler = async (
     await payload.update({
       collection: "orders",
       data: {
-        _isPAid: true,
+        _isPaid: true,
       },
       where: {
         id: {
