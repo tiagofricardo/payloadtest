@@ -34,7 +34,7 @@ exports.Orders = {
     },
     fields: [
         {
-            name: "_isPAid",
+            name: "_isPaid",
             type: "checkbox",
             access: {
                 read: function (_a) {
