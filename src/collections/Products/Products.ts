@@ -136,12 +136,12 @@ export const Products: CollectionConfig = {
         condition: () => false,
       },
     },
-    {
-      name: "name",
-      label: "Name",
-      type: "text",
-      required: true,
-    },
+      {
+        name: "name",
+        label: "Name",
+        type: "text",
+        required: true,
+      },
     {
       name: "description",
       type: "textarea",
